@@ -1,0 +1,15 @@
+# Design files
+*.sketch
+*.xd
+*.fig
+
+# Custom files
+
+node_modules/
+
+#
+
+docs/
+views/
+data.json
+README.md
