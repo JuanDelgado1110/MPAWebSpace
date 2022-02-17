@@ -1,0 +1,53 @@
+.navegationLinks {
+	&__iconContiner {
+		width: 40px;
+		height: 100%;
+	}
+
+	&__mobileIcon {
+		width: 75%;
+		margin-top: 11px;
+		position: relative;
+		font-size: 2rem;
+		color: var(--color-secondary);
+		z-index: 10;
+	}
+
+	&__linksContainer {
+		width: 70vw;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #ffffff25;
+		backdrop-filter: blur(20px) brightness(1.7);
+
+		&--hidden {
+			display: none;
+		}
+
+		&--show {
+			display: block;
+		}
+	}
+
+	&__listOfLinks {
+		margin-top: 7em;
+	}
+
+	&__linkContainer {
+		margin-bottom: 1em;
+		margin-left: 1.5em;
+		font-size: 1.5rem;
+		font-family: var(--secundary-font-condensed);
+		letter-spacing: 2.5px;
+	}
+
+	&__link--number {
+		font-weight: 700;
+	}
+
+	&__link--text {
+		text-transform: uppercase;
+	}
+}

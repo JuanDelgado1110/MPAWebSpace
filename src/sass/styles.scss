@@ -1,3 +1,17 @@
-@import "config/variables";
+// Base Styles
 
-@import "base/_tags";
+@import "config/_variables.scss";
+
+@import "base/_tags.scss";
+
+// Components Styles
+
+@import "components/_navegation-links.scss";
+@import "components/_header.scss";
+
+// Layout Styles
+
+// main-page
+
+@import "layout/main-page/_main-continer.scss";
+@import "layout/main-page/_main-page.scss";
