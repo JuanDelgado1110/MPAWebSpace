@@ -39,7 +39,7 @@
 		margin-bottom: 1em;
 		margin-left: 1.5em;
 		font-size: 1.5rem;
-		font-family: var(--secundary-font-condensed);
+		font-family: var(--secondary-font-condensed);
 		letter-spacing: 2.5px;
 	}
 
@@ -47,7 +47,7 @@
 		font-weight: 700;
 	}
 
-	&__link--text {
+	&__link {
 		text-transform: uppercase;
 	}
 }

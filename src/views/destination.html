@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>MPA Space Travel</title>
+		<title>MPA Space Travel - Destination</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="shortcut icon" href="/src/assets/images/icons/favicon-32x32.png" type="image/x-icon" />
@@ -16,10 +16,10 @@
 			rel="stylesheet"
 		/>
 
-		<script src="/src/javascript/scripts.js" type="module" defer></script>
+		<script src="/src/javascript/pages-scripts/destination-page.js" type="module" defer></script>
 	</head>
 	<body>
-		<div class="mainContainer--mainPage">
+		<div class="mainContainer--destinationPage">
 			<header class="header">
 				<div class="header__logoContiner">
 					<img src="/src/assets/images/icons/logo.svg" alt="logo" class="header__logo" />
@@ -39,14 +39,14 @@
 					<nav class="navegationLinks__linksContainer navegationLinks__linksContainer--hidden">
 						<ul class="navegationLinks__listOfLinks">
 							<li class="navegationLinks__linkContainer">
-								<a href="#" class="navegationLinks__link">
+								<a href="/index.html" class="navegationLinks__link">
 									<span class="navegationLinks__link--number">00</span>
 									home
 								</a>
 							</li>
 
 							<li class="navegationLinks__linkContainer">
-								<a href="/src/views/destination.html" class="navegationLinks__link">
+								<a href="#" class="navegationLinks__link">
 									<span class="navegationLinks__link--number">01</span>
 									destination
 								</a>
@@ -70,14 +70,50 @@
 				</div>
 			</header>
 
-			<section class="mainPage">
-				<span class="mainPage__preTitle">so you want, to travel to</span>
-				<h1 class="mainPage__title">space</h1>
-				<p class="mainPage__paragraph">
-					Let's face it, if you want to go to space, you might as well genuinely go to outer and not hover kind of on
-					the egde of it. well sit back, because we'll you give you a truly out of this world experience!
-				</p>
-			</section>
+			<div class="destinationPage">
+				<div class="destinationPage__presentation">
+					<h2 class="destinationPage__title">
+						<span class="destinationPage__title--number">01</span>
+						pick your destination
+					</h2>
+
+					<div class="destinationPage__imageContainer">
+						<img
+							src="/src/assets/images/destination/image-moon.webp"
+							alt="Image of Moon"
+							class="destinationPage__destinationImg"
+						/>
+					</div>
+				</div>
+
+				<div class="infoContainer">
+					<div class="infoContainer__linksContainer">
+						<a href="#" class="infoContainer__link infoContainer__link--active">moon</a>
+						<a href="#" class="infoContainer__link">mars</a>
+						<a href="#" class="infoContainer__link">europa</a>
+						<a href="#" class="infoContainer__link">titan</a>
+					</div>
+
+					<h2 class="infoContainer__title">moon</h2>
+					<p class="infoContainer__paragraph">
+						See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and
+						come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing
+						sites.
+					</p>
+
+					<div class="infoContainer__extraInfo">
+						<div class="infoContainer__distance">
+							<span class="infoContainer__distance--title">avg. distance</span>
+							384,400 km
+						</div>
+
+						<div class="infoContainer__timeTravel">
+							<span class="infoContainer__timeTravel--title">est. time travel</span>
+							3 days
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

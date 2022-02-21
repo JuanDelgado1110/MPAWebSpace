@@ -11,7 +11,13 @@
 
 // Layout Styles
 
+@import "layout/_main-container.scss";
+
 // main-page
 
-@import "layout/main-page/_main-continer.scss";
 @import "layout/main-page/_main-page.scss";
+
+// destination-page
+
+@import "layout/destination-page/_destination-page.scss";
+@import "layout/destination-page/_info-container.scss";
