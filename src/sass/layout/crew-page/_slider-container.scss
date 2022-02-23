@@ -1,0 +1,41 @@
+.sliderContainer {
+	display: flex;
+	flex-direction: column-reverse;
+
+	&__job {
+		margin-bottom: 0.5em;
+		font-family: var(--body-fontFamily);
+		text-align: center;
+		color: #ffffff40;
+	}
+
+	&__name {
+		margin-bottom: 0.5em;
+		font-size: 1.5rem;
+	}
+
+	&__paragraph {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.sliderControllers {
+	width: 85vw;
+	margin: 0 auto 1em;
+	padding: 1.5em 6em 1em;
+	display: flex;
+	justify-content: space-evenly;
+	border-top: 1px solid #ffffff40;
+
+	&__button {
+		width: 10px;
+		height: 10px;
+		background-color: #ffffff40;
+		border-radius: 50%;
+
+		&--active {
+			background-color: var(--color-tertiary);
+		}
+	}
+}

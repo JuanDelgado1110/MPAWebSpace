@@ -6,6 +6,7 @@
 
 // Components Styles
 
+@import "components/_text-components.scss";
 @import "components/_navegation-links.scss";
 @import "components/_header.scss";
 
@@ -20,4 +21,9 @@
 // destination-page
 
 @import "layout/destination-page/_destination-page.scss";
-@import "layout/destination-page/_info-container.scss";
+@import "layout/destination-page/_destination-container.scss";
+
+// slider-page
+
+@import "layout/crew-page/_slider-page.scss";
+@import "layout/crew-page/_slider-container.scss";

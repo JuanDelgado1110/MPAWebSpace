@@ -1,4 +1,4 @@
-.infoContainer {
+.destinationContainer {
 	&__linksContainer {
 		margin: 0 auto 1.5em;
 		width: 75vw;
@@ -8,10 +8,8 @@
 
 	&__link {
 		padding-bottom: 0.5em;
-		font-family: var(--secondary-font-condensed);
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		color: var(--color-secondary);
 
 		&--active {
 			border-bottom: 2px solid var(--color-tertiary);
@@ -23,21 +21,13 @@
 		margin: 0 auto 0.2em;
 		width: 75vw;
 		font-size: 3.5rem;
-		font-family: var(--body-fontFamily);
 		font-weight: 300;
-		text-transform: uppercase;
-		text-align: center;
-		color: var(--color-tertiary);
 	}
 
 	&__paragraph {
 		margin: 0 auto 2em;
 		width: 80vw;
 		font-size: 0.9rem;
-		font-family: var(--secondary-font);
-		text-align: center;
-		line-height: 23px;
-		color: var(--color-secondary);
 	}
 
 	&__extraInfo {
@@ -51,19 +41,13 @@
 	&__timeTravel {
 		margin-bottom: 0.75em;
 		font-size: 2rem;
-		font-family: var(--body-fontFamily);
-		text-transform: uppercase;
-		text-align: center;
-		color: var(--color-tertiary);
 
 		&--title {
 			margin-bottom: 0.5em;
 			display: block;
 			font-size: 1rem;
-			font-family: var(--secondary-font-condensed);
 			font-weight: 300;
 			letter-spacing: 3px;
-			color: var(--color-secondary);
 		}
 	}
 }

@@ -1,0 +1,23 @@
+{
+	"name": "mpa-space-page",
+	"version": "1.0.0",
+	"description": "descripcion del proyecto",
+	"main": "index.js",
+	"scripts": {
+		"dev": "servor"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JuanDelgado1110/MPAWebSpace.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JuanDelgado1110/MPAWebSpace/issues"
+	},
+	"homepage": "https://github.com/JuanDelgado1110/MPAWebSpace#readme",
+	"dependencies": {
+		"servor": "^4.0.2"
+	}
+}

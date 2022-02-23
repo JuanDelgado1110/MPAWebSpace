@@ -43,11 +43,9 @@
 		letter-spacing: 2.5px;
 	}
 
-	&__link--number {
-		font-weight: 700;
-	}
-
 	&__link {
-		text-transform: uppercase;
+		&--number {
+			font-weight: 700;
+		}
 	}
 }

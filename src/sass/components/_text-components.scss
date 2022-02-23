@@ -1,0 +1,25 @@
+.title {
+	font-family: var(--body-fontFamily);
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--color-tertiary);
+}
+
+.paragraph {
+	font-family: var(--secondary-font);
+	text-align: center;
+	line-height: 25px;
+	color: var(--color-secondary);
+}
+
+.subTitle {
+	font-family: var(--secondary-font-condensed);
+	text-transform: uppercase;
+	color: var(--color-secondary);
+
+	&--white {
+		font-family: var(--secondary-font-condensed);
+		text-transform: uppercase;
+		color: var(--color-tertiary);
+	}
+}
