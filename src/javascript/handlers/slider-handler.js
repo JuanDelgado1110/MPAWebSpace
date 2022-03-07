@@ -7,7 +7,12 @@ export function changeSliderOnClick(buttons) {
 }
 
 export function changeSlider(image, job, title, paragraph) {
-	image.src = dataJSON[sliderPosition].image;
+	if (typeof dataJSON[sliderPosition].image === "object") {
+		image.src = dataJSON[sliderPosition].image.landscape;
+	} else {
+		image.src = dataJSON[sliderPosition].image;
+	}
+
 	title.textContent = dataJSON[sliderPosition].name;
 	paragraph.textContent = dataJSON[sliderPosition].bio;
 

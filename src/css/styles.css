@@ -175,6 +175,13 @@ button {
   background-size: cover;
 }
 
+.mainContainer--technology {
+  height: 100vh;
+  background-image: url(../assets/images/backgrounds/technology/background-technology-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .mainPage__preTitle {
   margin-bottom: 1em;
   display: block;
@@ -339,4 +346,64 @@ button {
 
 .sliderControllers__button--active {
   background-color: var(--color-tertiary);
+}
+
+.technologyPage__title {
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.technologyPage__title--number {
+  font-weight: 700;
+  color: #ffffff40;
+}
+
+.technologyContainer__imageContainer {
+  margin-bottom: 2em;
+}
+
+.technologyContainer__image {
+  max-width: 100%;
+}
+
+.technologyButtons {
+  width: 80vw;
+  margin: 0 2em 10vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.technologyButtons__button {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px 15px;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: white;
+}
+
+.technologyButtons__button--active {
+  background-color: white;
+  color: #000;
+}
+
+.technologyInfo__title {
+  margin-bottom: 0.3em;
+  text-align: center;
+  font-family: var(--body-fontfamily);
+  color: #ffffff40;
+}
+
+.technologyInfo__terminology {
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+}
+
+.technologyInfo__description {
+  width: 90vw;
+  margin: auto 5vw 0;
 }

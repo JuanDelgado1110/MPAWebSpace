@@ -1,0 +1,50 @@
+.technologyContainer {
+	&__imageContainer {
+		margin-bottom: 2em;
+	}
+
+	&__image {
+		max-width: 100%;
+	}
+}
+
+.technologyButtons {
+	width: 80vw;
+	margin: 0 2em 10vw;
+	display: flex;
+	justify-content: space-evenly;
+
+	&__button {
+		border: 1px solid white;
+		border-radius: 50%;
+		padding: 10px 15px;
+		outline: none;
+		background-color: transparent;
+		font-size: 1rem;
+		color: white;
+
+		&--active {
+			background-color: white;
+			color: #000;
+		}
+	}
+}
+
+.technologyInfo {
+	&__title {
+		margin-bottom: 0.3em;
+		text-align: center;
+		font-family: var(--body-fontfamily);
+		color: #ffffff40;
+	}
+
+	&__terminology {
+		margin-bottom: 1em;
+		font-size: 1.5rem;
+	}
+
+	&__description {
+		width: 90vw;
+		margin: auto 5vw 0;
+	}
+}
