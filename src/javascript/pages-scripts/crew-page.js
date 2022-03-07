@@ -12,6 +12,11 @@ mobileIcon.addEventListener("click", menuHandler);
 
 const sliderControllers = document.querySelector(".sliderControllers");
 
+export const sliderJob = document.querySelector(".sliderContainer__job");
+export const sliderName = document.querySelector(".sliderContainer__name");
+export const sliderParagraph = document.querySelector(".sliderContainer__paragraph");
+export const sliderImage = document.querySelector(".sliderImageContainer__img");
+
 sliderControllers.addEventListener("click", (event) => {
 	stopInterval();
 
@@ -24,9 +29,9 @@ sliderControllers.addEventListener("click", (event) => {
 			event.target.classList.add("sliderControllers__button--active");
 		}
 
-		changeSliderOnClick();
+		changeSliderOnClick(sliderButtons);
 	}
 
-	changeSlider();
+	changeSlider(sliderImage, sliderJob, sliderName, sliderParagraph);
 	starInterval();
 });

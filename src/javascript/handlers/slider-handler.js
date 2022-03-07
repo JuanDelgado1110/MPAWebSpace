@@ -1,27 +1,22 @@
 import { dataJSON } from "./request-data.js";
-import { sliderButtons } from "../functions/slider-interval.js";
-
-const sliderJob = document.querySelector(".sliderContainer__job");
-const sliderName = document.querySelector(".sliderContainer__name");
-const sliderParagraph = document.querySelector(".sliderContainer__paragraph");
-const sliderImage = document.querySelector(".sliderImageContainer__img");
 
 export let sliderPosition = 0;
 
-export function changeSliderOnClick() {
-	sliderPosition = sliderButtons.findIndex((element) => element === event.target);
+export function changeSliderOnClick(buttons) {
+	sliderPosition = buttons.findIndex((element) => element === event.target);
 }
 
-export function changeSlider() {
-	sliderImage.src = dataJSON[sliderPosition].image;
-	sliderJob.textContent = dataJSON[sliderPosition].role;
-	sliderName.textContent = dataJSON[sliderPosition].name;
-	sliderParagraph.textContent = dataJSON[sliderPosition].bio;
+export function changeSlider(image, job, title, paragraph) {
+	image.src = dataJSON[sliderPosition].image;
+	title.textContent = dataJSON[sliderPosition].name;
+	paragraph.textContent = dataJSON[sliderPosition].bio;
+
+	if (job != null) job.textContent = dataJSON[sliderPosition].role;
 }
 
-export function nextSlide() {
-	if (sliderPosition == sliderButtons.length - 1) {
-		sliderPosition = sliderButtons.length - sliderButtons.length - 1;
+export function nextSlide(buttons) {
+	if (sliderPosition == buttons.length - 1) {
+		sliderPosition = buttons.length - buttons.length - 1;
 	}
 
 	sliderPosition += 1;
