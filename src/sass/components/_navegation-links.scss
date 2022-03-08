@@ -21,13 +21,14 @@
 		right: 0;
 		background-color: #ffffff25;
 		backdrop-filter: blur(20px) brightness(1.7);
+		transition: transform 0.5s linear;
 
 		&--hidden {
-			display: none;
+			transform: translateX(70vw);
 		}
 
 		&--show {
-			display: block;
+			transform: translateX(0);
 		}
 	}
 
@@ -44,6 +45,8 @@
 	}
 
 	&__link {
+		text-shadow: 3px 3px 5px #000, -1px -1px 5px #000;
+
 		&--number {
 			font-weight: 700;
 		}
