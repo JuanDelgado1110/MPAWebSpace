@@ -19,3 +19,20 @@
 		font-size: 0.89rem;
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.mainPage {
+		&__preTitle {
+			font-size: 1.45rem;
+		}
+
+		&__title {
+			font-size: 10rem;
+		}
+
+		&__paragraph {
+			font-size: 1.5rem;
+			line-height: 2.2rem;
+		}
+	}
+}

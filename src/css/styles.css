@@ -84,7 +84,7 @@ button {
   color: var(--color-tertiary);
 }
 
-.navegationLinks__iconContiner {
+.navegationLinks__iconContainer {
   width: 40px;
   height: 100%;
 }
@@ -114,7 +114,7 @@ button {
 }
 
 .navegationLinks__linksContainer--show {
-  transform: translateX(0);
+  transform: translateX(0px);
 }
 
 .navegationLinks__listOfLinks {
@@ -124,17 +124,55 @@ button {
 .navegationLinks__linkContainer {
   margin-bottom: 1em;
   margin-left: 1.5em;
-  font-size: 1.5rem;
   font-family: var(--secondary-font-condensed);
   letter-spacing: 2.5px;
 }
 
 .navegationLinks__link {
+  font-size: 1.5rem;
   text-shadow: 3px 3px 5px #000, -1px -1px 5px #000;
 }
 
 .navegationLinks__link--number {
   font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .navegationLinks__iconContainer {
+    display: none;
+  }
+  .navegationLinks__linksContainer {
+    height: 100%;
+    position: relative;
+    top: -16px;
+    right: -16px;
+  }
+  .navegationLinks__linksContainer--hidden {
+    transform: translateX(0px);
+  }
+  .navegationLinks__linksContainer--show {
+    transform: translateX(0px);
+  }
+  .navegationLinks__listOfLinks {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .navegationLinks__linkContainer {
+    margin: 0px;
+    padding: 2em 0;
+  }
+  .navegationLinks__linkContainer--active {
+    border-bottom: 2px solid white;
+  }
+  .navegationLinks__link {
+    font-size: 1rem;
+  }
+  .navegationLinks__link--number {
+    display: none;
+  }
 }
 
 .header {
@@ -157,6 +195,12 @@ button {
 
 .header__decorativeBar {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logoContiner {
+    margin-left: 1em;
+  }
 }
 
 .mainContainer--mainPage {
@@ -187,6 +231,13 @@ button {
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .mainContainer--mainPage {
+    background-image: url(../assets/images/backgrounds/main-page/background-home-tablet.jpg);
+    background-size: 100vw 100vh;
+  }
+}
+
 .mainPage__preTitle {
   margin-bottom: 1em;
   display: block;
@@ -205,6 +256,19 @@ button {
 .mainPage__paragraph {
   padding: 0 2em;
   font-size: 0.89rem;
+}
+
+@media screen and (min-width: 768px) {
+  .mainPage__preTitle {
+    font-size: 1.45rem;
+  }
+  .mainPage__title {
+    font-size: 10rem;
+  }
+  .mainPage__paragraph {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
 }
 
 .destinationPage__presentation {

@@ -1,5 +1,5 @@
 .navegationLinks {
-	&__iconContiner {
+	&__iconContainer {
 		width: 40px;
 		height: 100%;
 	}
@@ -28,7 +28,7 @@
 		}
 
 		&--show {
-			transform: translateX(0);
+			transform: translateX(0px);
 		}
 	}
 
@@ -39,16 +39,64 @@
 	&__linkContainer {
 		margin-bottom: 1em;
 		margin-left: 1.5em;
-		font-size: 1.5rem;
 		font-family: var(--secondary-font-condensed);
 		letter-spacing: 2.5px;
 	}
 
 	&__link {
+		font-size: 1.5rem;
 		text-shadow: 3px 3px 5px #000, -1px -1px 5px #000;
 
 		&--number {
 			font-weight: 700;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.navegationLinks {
+		&__iconContainer {
+			display: none;
+		}
+
+		&__linksContainer {
+			height: 100%;
+			position: relative;
+			top: -16px;
+			right: -16px;
+
+			&--hidden {
+				transform: translateX(0px);
+			}
+
+			&--show {
+				transform: translateX(0px);
+			}
+		}
+
+		&__listOfLinks {
+			height: 100%;
+			margin: 0px;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+
+		&__linkContainer {
+			margin: 0px;
+			padding: 2em 0;
+
+			&--active {
+				border-bottom: 2px solid white;
+			}
+		}
+
+		&__link {
+			font-size: 1rem;
+
+			&--number {
+				display: none;
+			}
 		}
 	}
 }
