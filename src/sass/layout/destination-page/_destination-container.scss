@@ -51,3 +51,25 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.destinationContainer {
+		&__linksContainer {
+			width: 40vw;
+		}
+
+		&__title {
+			font-size: 5rem;
+		}
+
+		&__paragraph {
+			font-size: 1rem;
+			line-height: 1.75em;
+		}
+
+		&__extraInfo {
+			display: flex;
+			justify-content: space-evenly;
+		}
+	}
+}

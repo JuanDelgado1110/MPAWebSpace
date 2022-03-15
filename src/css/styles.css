@@ -236,6 +236,11 @@ button {
     background-image: url(../assets/images/backgrounds/main-page/background-home-tablet.jpg);
     background-size: 100vw 100vh;
   }
+  .mainContainer--destinationPage {
+    height: 100vh;
+    background-image: url(../assets/images/backgrounds/destination/background-destination-tablet.jpg);
+    background-size: 100vw 100vh;
+  }
 }
 
 .mainPage__preTitle {
@@ -299,6 +304,18 @@ button {
   max-width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .destinationPage__title {
+    text-align: initial;
+    text-indent: 3rem;
+    font-size: 1.5rem;
+  }
+  .destinationPage__imageContainer {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .destinationContainer__linksContainer {
   margin: 0 auto 1.5em;
   width: 75vw;
@@ -348,6 +365,23 @@ button {
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .destinationContainer__linksContainer {
+    width: 40vw;
+  }
+  .destinationContainer__title {
+    font-size: 5rem;
+  }
+  .destinationContainer__paragraph {
+    font-size: 1rem;
+    line-height: 1.75em;
+  }
+  .destinationContainer__extraInfo {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .sliderPage__title {
