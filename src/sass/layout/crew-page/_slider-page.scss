@@ -24,3 +24,24 @@
 		max-width: 100%;
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.mainContainer--sliderPage {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.sliderPage {
+		&__title {
+			text-align: initial;
+			text-indent: 3rem;
+			font-size: 1.25rem;
+		}
+	}
+
+	.sliderImageContainer {
+		min-height: 500px;
+	}
+}

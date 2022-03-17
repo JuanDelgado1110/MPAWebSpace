@@ -208,6 +208,7 @@ button {
   background-image: url(../assets/images/backgrounds/main-page/background-home-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .mainContainer--destinationPage {
@@ -215,6 +216,7 @@ button {
   background-image: url(../assets/images/backgrounds/destination/background-destination-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .mainContainer--sliderPage {
@@ -222,6 +224,7 @@ button {
   background-image: url(../assets/images/backgrounds/crew/background-crew-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .mainContainer--technology {
@@ -229,6 +232,7 @@ button {
   background-image: url(../assets/images/backgrounds/technology/background-technology-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -239,6 +243,14 @@ button {
   .mainContainer--destinationPage {
     height: 100vh;
     background-image: url(../assets/images/backgrounds/destination/background-destination-tablet.jpg);
+    background-size: 100vw 100vh;
+  }
+  .mainContainer--sliderPage {
+    background-image: url(../assets/images/backgrounds/crew/background-crew-tablet.jpg);
+    background-size: 100vw 100vh;
+  }
+  .mainContainer--technology {
+    background-image: url(../assets/images/backgrounds/technology/background-technology-tablet.jpg);
     background-size: 100vw 100vh;
   }
 }
@@ -409,6 +421,23 @@ button {
   max-width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .mainContainer--sliderPage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sliderPage__title {
+    text-align: initial;
+    text-indent: 3rem;
+    font-size: 1.25rem;
+  }
+  .sliderImageContainer {
+    min-height: 500px;
+  }
+}
+
 .sliderContainer {
   display: flex;
   flex-direction: column-reverse;
@@ -451,6 +480,28 @@ button {
   background-color: var(--color-tertiary);
 }
 
+@media screen and (min-width: 768px) {
+  .sliderContainer {
+    flex-direction: column;
+  }
+  .sliderContainer__info {
+    margin-bottom: 1em;
+  }
+  .sliderContainer__job {
+    font-size: 1.5rem;
+  }
+  .sliderContainer__name {
+    font-size: 2.5rem;
+  }
+  .sliderContainer__paragraph {
+    width: 60vw;
+    line-height: 1.75em;
+  }
+  .sliderControllers {
+    border: none;
+  }
+}
+
 .technologyPage__title {
   margin-bottom: 2em;
   text-align: center;
@@ -474,7 +525,7 @@ button {
 
 .technologyButtons {
   width: 80vw;
-  margin: 0 2em 10vw;
+  margin: 0 auto 2em;
   display: flex;
   justify-content: space-evenly;
 }
@@ -509,4 +560,11 @@ button {
 .technologyInfo__description {
   width: 90vw;
   margin: auto 5vw 0;
+}
+
+@media screen and (min-width: 768px) {
+  .technologyButtons {
+    width: 40vw;
+    margin: 0 auto 3em;
+  }
 }

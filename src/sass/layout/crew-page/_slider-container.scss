@@ -39,3 +39,30 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.sliderContainer {
+		flex-direction: column;
+
+		&__info {
+			margin-bottom: 1em;
+		}
+
+		&__job {
+			font-size: 1.5rem;
+		}
+
+		&__name {
+			font-size: 2.5rem;
+		}
+
+		&__paragraph {
+			width: 60vw;
+			line-height: 1.75em;
+		}
+	}
+
+	.sliderControllers {
+		border: none;
+	}
+}
