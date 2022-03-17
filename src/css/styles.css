@@ -515,11 +515,21 @@ button {
   color: #ffffff40;
 }
 
+@media screen and (min-width: 768px) {
+  .technologyPage__title {
+    text-align: initial;
+    text-indent: 3rem;
+    font-size: 1.25rem;
+  }
+}
+
 .technologyContainer__imageContainer {
+  width: 100vw;
   margin-bottom: 2em;
 }
 
 .technologyContainer__image {
+  width: 100%;
   max-width: 100%;
 }
 
@@ -548,7 +558,7 @@ button {
 .technologyInfo__title {
   margin-bottom: 0.3em;
   text-align: center;
-  font-family: var(--body-fontfamily);
+  font-family: var(--body-fontFamily);
   color: #ffffff40;
 }
 
@@ -566,5 +576,17 @@ button {
   .technologyButtons {
     width: 40vw;
     margin: 0 auto 3em;
+  }
+  .technologyInfo__title {
+    font-size: 1.5rem;
+  }
+  .technologyInfo__terminology {
+    font-size: 2.5rem;
+  }
+  .technologyInfo__description {
+    margin: 0 auto;
+    width: 70vw;
+    line-height: 1.75em;
+    font-size: 1.125rem;
   }
 }

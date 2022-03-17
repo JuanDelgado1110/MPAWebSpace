@@ -1,16 +1,18 @@
 .technologyContainer {
 	&__imageContainer {
+		width: 100vw;
 		margin-bottom: 2em;
 	}
 
 	&__image {
+		width: 100%;
 		max-width: 100%;
 	}
 }
 
 .technologyButtons {
 	width: 80vw;
-	margin: 0 2em 10vw;
+	margin: 0 auto 2em;
 	display: flex;
 	justify-content: space-evenly;
 
@@ -34,7 +36,7 @@
 	&__title {
 		margin-bottom: 0.3em;
 		text-align: center;
-		font-family: var(--body-fontfamily);
+		font-family: var(--body-fontFamily);
 		color: #ffffff40;
 	}
 
@@ -46,5 +48,29 @@
 	&__description {
 		width: 90vw;
 		margin: auto 5vw 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.technologyButtons {
+		width: 40vw;
+		margin: 0 auto 3em;
+	}
+
+	.technologyInfo {
+		&__title {
+			font-size: 1.5rem;
+		}
+
+		&__terminology {
+			font-size: 2.5rem;
+		}
+
+		&__description {
+			margin: 0 auto;
+			width: 70vw;
+			line-height: 1.75em;
+			font-size: 1.125rem;
+		}
 	}
 }
