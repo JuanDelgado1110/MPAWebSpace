@@ -15,7 +15,6 @@
 		max-width: 100%;
 	}
 
-	//  NOTE mostrar esto en desktop
 	&__decorativeBar {
 		display: none;
 	}
@@ -25,6 +24,29 @@
 	.header {
 		&__logoContiner {
 			margin-left: 1em;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.header {
+		padding-top: 2em;
+		padding-right: 0px;
+		align-items: center;
+
+		&__logoContainer {
+			width: 48px;
+			height: 48px;
+			padding: 0px;
+		}
+
+		&__decorativeBar {
+			width: 35%;
+			position: absolute;
+			// top: 48.5%;
+			left: 9%;
+			display: block;
+			border: 1px solid #ffffff40;
 		}
 	}
 }

@@ -100,3 +100,27 @@
 		}
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.navegationLinks {
+		&__linksContainer {
+			width: 57.64vw;
+			height: 10.5vh;
+			position: static;
+		}
+
+		&__linkContainer {
+			padding: 2.3em 0px;
+
+			&:last-child {
+				margin-right: 7.5em;
+			}
+		}
+
+		&__link {
+			&--number {
+				display: inline;
+			}
+		}
+	}
+}

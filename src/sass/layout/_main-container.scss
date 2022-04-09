@@ -56,3 +56,11 @@
 		}
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.mainContainer {
+		&--mainPage {
+			background-image: url(../assets/images/backgrounds/main-page/background-home-desktop.jpg);
+		}
+	}
+}
