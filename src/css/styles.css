@@ -331,6 +331,23 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .mainPage {
+    padding-top: 10%;
+    padding-left: 9.25vw;
+  }
+  .mainPage__title, .mainPage__paragraph, .mainPage__preTitle {
+    text-align: initial;
+  }
+  .mainPage__title {
+    margin-left: -12px;
+  }
+  .mainPage__paragraph {
+    max-width: 50vw;
+    padding: 0px;
+  }
+}
+
 .destinationPage__presentation {
   margin-bottom: 1.5em;
 }

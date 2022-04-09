@@ -38,4 +38,23 @@
 }
 
 @media screen and (min-width: 1200px) {
+	.mainPage {
+		padding-top: 10%;
+		padding-left: 9.25vw;
+
+		&__title,
+		&__paragraph,
+		&__preTitle {
+			text-align: initial;
+		}
+
+		&__title {
+			margin-left: -12px;
+		}
+
+		&__paragraph {
+			max-width: 50vw;
+			padding: 0px;
+		}
+	}
 }
