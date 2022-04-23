@@ -73,3 +73,57 @@
 		}
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.destinationContainer {
+		display: grid;
+		grid-template-columns: 32vw 45vw;
+		column-gap: 100px;
+		padding-left: 10vw;
+
+		&__info {
+			width: 100%;
+		}
+
+		&__extraInfo {
+			width: auto;
+		}
+
+		&__linksContainer {
+			margin-left: 0;
+			margin-right: 0;
+			width: 50%;
+			justify-content: space-between;
+		}
+
+		&__link {
+			font-size: 1.2rem;
+			padding-bottom: 0.3em;
+		}
+
+		&__title {
+			text-align: left;
+			font-size: 7rem;
+			width: auto;
+		}
+
+		&__paragraph {
+			font-size: 1.2rem;
+			text-align: left;
+			width: auto;
+		}
+
+		&__extraInfo {
+			justify-content: flex-start;
+		}
+
+		&__distance {
+			margin-right: 2em;
+			text-align: left;
+		}
+
+		&__timeTravel {
+			text-align: left;
+		}
+	}
+}

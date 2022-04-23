@@ -349,11 +349,11 @@ button {
 }
 
 .destinationPage__presentation {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 
 .destinationPage__title {
-  margin: 0 0 2em;
+  margin: 0;
   font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -367,7 +367,7 @@ button {
 }
 
 .destinationPage__imageContainer {
-  margin: 0 auto;
+  margin: 0 auto 1.5em;
   width: 50vw;
   text-align: center;
 }
@@ -383,8 +383,19 @@ button {
     font-size: 1.5rem;
   }
   .destinationPage__imageContainer {
-    width: 300px;
-    height: 300px;
+    max-width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .destinationPage__presentation {
+    margin-bottom: 4rem;
+  }
+  .destinationPage__imageContainer {
+    max-width: 100%;
+  }
+  .destinationPage__title {
+    padding-left: 5vw;
   }
 }
 
@@ -453,6 +464,51 @@ button {
   .destinationContainer__extraInfo {
     display: flex;
     justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .destinationContainer {
+    display: grid;
+    grid-template-columns: 32vw 45vw;
+    column-gap: 100px;
+    padding-left: 10vw;
+  }
+  .destinationContainer__info {
+    width: 100%;
+  }
+  .destinationContainer__extraInfo {
+    width: auto;
+  }
+  .destinationContainer__linksContainer {
+    margin-left: 0;
+    margin-right: 0;
+    width: 50%;
+    justify-content: space-between;
+  }
+  .destinationContainer__link {
+    font-size: 1.2rem;
+    padding-bottom: 0.3em;
+  }
+  .destinationContainer__title {
+    text-align: left;
+    font-size: 7rem;
+    width: auto;
+  }
+  .destinationContainer__paragraph {
+    font-size: 1.2rem;
+    text-align: left;
+    width: auto;
+  }
+  .destinationContainer__extraInfo {
+    justify-content: flex-start;
+  }
+  .destinationContainer__distance {
+    margin-right: 2em;
+    text-align: left;
+  }
+  .destinationContainer__timeTravel {
+    text-align: left;
   }
 }
 
