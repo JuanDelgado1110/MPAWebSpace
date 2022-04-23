@@ -5,7 +5,7 @@
 	position: relative;
 	justify-content: space-between;
 
-	&__logoContiner {
+	&__logoContainer {
 		width: 40px;
 		margin-left: 0.5em;
 		padding: 0.3em 0;
@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 768px) {
 	.header {
-		&__logoContiner {
+		&__logoContainer {
 			margin-left: 1em;
 		}
 	}
